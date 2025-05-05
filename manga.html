@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Manga Comic</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="top-bar">
+    <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+    <button onclick="toggleDistractionFree()">🧘 Distraction-Free Mode</button>
+  </div>
+
+  <div class="comic-container">
+    <h1>📖 From Pitch to Hero: The Rise of Daniel Muntean</h1>
+    <div class="comic-wrapper">
+      <img src="comics/page1.png" alt="Manga Page" class="comic-image">
+    </div>
+    <p class="caption">Enjoy Chapter 1!</p>
+    <a class="back-button" href="index.html">⬅ Back to Library</a>
+  </div>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark");
+    }
+    function toggleDistractionFree() {
+      document.body.classList.toggle("clean-mode");
+    }
+  </script>
+</body>
+</html>
